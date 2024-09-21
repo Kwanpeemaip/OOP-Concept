@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เปรียบเทียบ OOP ใน Java, C++, Python</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            line-height: 1.4;
+            margin: 0;
+            padding: 20px;
+            background-image: linear-gradient(to bottom, #f7f7f7, #ffffff);
+            background-color: #ffffff;
+            color: #333;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #45B3FA; /* Blue tone */
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #45B3FA; /* Blue tone */
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #45B3FA; /* Blue tone */
+            color: white;
+            border-bottom: 2px solid #ddd;
+        }
+        
+        tr:hover {
+            background-color: #C7E4F7; /* Light blue tone */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>เปรียบเทียบ OOP ใน Java, C++, Python</h1>
+
+    <h2>ความเหมือน</h2>
+    <ul>
+        <li>ใช้แนวคิดในการจัดกลุ่มข้อมูลและฟังก์ชันที่เกี่ยวข้องเป็นอ็อบเจกต์</li>
+        <li>รองรับการสืบทอด (Inheritance) เพื่อสร้างคลาสลูกจากคลาสพ่อแม่</li>
+        <li>สนับสนุนการแอบซ่อนข้อมูล (Encapsulation) เพื่อควบคุมการเข้าถึงข้อมูล</li>
+        <li>สนับสนุนการ polymorphism ในการใช้เมธอดเดียวกันกับอ็อบเจกต์ประเภทต่างๆ</li>
+    </ul>
+
+    <h2>ความแตกต่าง</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>คุณสมบัติ</th>
+                <th>Java</th>
+                <th>C++</th>
+                <th>Python</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>การประกาศคลาส</td>
+                <td>ใช้คำว่า <code>class</code></td>
+                <td>ใช้คำว่า <code>class</code></td>
+                <td>ใช้คำว่า <code>class</code></td>
+            </tr>
+            <tr>
+                <td>การสืบทอด</td>
+                <td>ใช้ <code>extends</code> สำหรับคลาสลูก</td>
+                <td>ใช้ <code>:</code> ตามด้วยชื่อคลาสพ่อแม่</td>
+                <td>ใช้ <code>(ParentClass)</code> ในการประกาศ</td>
+            </tr>
+            <tr>
+                <td>การจัดการหน่วยความจำ</td>
+                <td>มี garbage collection</td>
+                <td>ใช้ destructor และ manual memory management</td>
+                <td>มี garbage collection</td>
+            </tr>
+            <tr>
+                <td>การกำหนดประเภทข้อมูล</td>
+                <td>มีการกำหนดประเภทข้อมูลแบบเข้มงวด</td>
+                <td>มีการกำหนดประเภทข้อมูลแบบเข้มงวด</td>
+                <td>เป็นแบบ dynamic typing</td>
+            </tr>
+            <tr>
+                <td>การเข้าถึงข้อมูล</td>
+                <td>ใช้ <code>private</code>, <code>protected</code>, <code>public</code></td>
+                <td>ใช้ <code>private</code>, <code>protected</code>, <code>public</code></td>
+                <td>ใช้ <code>private</code> (อ้างอิงด้วย <code>_</code> หรือ <code>__</code>)</td>
+            </tr>
+            <tr>
+                <td>การเรียกใช้เมธอด</td>
+                <td>ใช้ <code>this</code> เพื่ออ้างอิงถึงอ็อบเจกต์ปัจจุบัน</td>
+                <td>ใช้ <code>this</code> เพื่ออ้างอิงถึงอ็อบเจกต์ปัจจุบัน</td>
+                <td>ใช้ <code>self</code> เป็นตัวชี้อ็อบเจกต์</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        &copy; 2024 เปรียบเทียบ OOP ใน Java, C++, Python
+    </footer>
+
+</body>
+</html>
