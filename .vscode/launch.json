@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/peemai./Documents/PL/OOP-Concept/C++",
+      "program": "/Users/peemai./Documents/PL/OOP-Concept/C++/build/Debug/outDebug"
+    }
+  ]
+}
